@@ -1,0 +1,16 @@
+C:\Users\egork\source\repos\Musical_Store\Musical_Store\bin\Debug\Musical_Store.exe.config
+C:\Users\egork\source\repos\Musical_Store\Musical_Store\bin\Debug\Musical_Store.exe
+C:\Users\egork\source\repos\Musical_Store\Musical_Store\bin\Debug\Musical_Store.pdb
+C:\Users\egork\source\repos\Musical_Store\Musical_Store\obj\Debug\Musical_Store.csproj.AssemblyReference.cache
+C:\Users\egork\source\repos\Musical_Store\Musical_Store\obj\Debug\Musical_Store.csproj.SuggestedBindingRedirects.cache
+C:\Users\egork\source\repos\Musical_Store\Musical_Store\obj\Debug\MainWindow.g.cs
+C:\Users\egork\source\repos\Musical_Store\Musical_Store\obj\Debug\App.g.cs
+C:\Users\egork\source\repos\Musical_Store\Musical_Store\obj\Debug\Musical_Store_MarkupCompile.cache
+C:\Users\egork\source\repos\Musical_Store\Musical_Store\obj\Debug\Musical_Store_MarkupCompile.lref
+C:\Users\egork\source\repos\Musical_Store\Musical_Store\obj\Debug\MainWindow.baml
+C:\Users\egork\source\repos\Musical_Store\Musical_Store\obj\Debug\Musical_Store.g.resources
+C:\Users\egork\source\repos\Musical_Store\Musical_Store\obj\Debug\Musical_Store.Properties.Resources.resources
+C:\Users\egork\source\repos\Musical_Store\Musical_Store\obj\Debug\Musical_Store.csproj.GenerateResource.cache
+C:\Users\egork\source\repos\Musical_Store\Musical_Store\obj\Debug\Musical_Store.csproj.CoreCompileInputs.cache
+C:\Users\egork\source\repos\Musical_Store\Musical_Store\obj\Debug\Musical_Store.exe
+C:\Users\egork\source\repos\Musical_Store\Musical_Store\obj\Debug\Musical_Store.pdb

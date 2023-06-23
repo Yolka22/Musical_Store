@@ -1,0 +1,80 @@
+﻿<Window x:Class="Musical_Store.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Musical_Store"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Вкладка 1">
+                <StackPanel Orientation="Vertical">
+                    <Menu>
+                        <MenuItem Header="Search">
+                            <MenuItem Header="Genre">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBox Width="100" Name="Genre"></TextBox>
+                                    <Button Click="Genre_Search_Click">GO</Button>
+                                </StackPanel>
+                            </MenuItem>
+                            <MenuItem Header="Name">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBox Width="100" Name="Name"></TextBox>
+                                    <Button Click="Name_Search_Click">GO</Button>
+                                </StackPanel>
+                            </MenuItem>
+                            <MenuItem Header="Bande">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBox Width="100" Name="Bande"></TextBox>
+                                    <Button Click="Bande_Search_Click">GO</Button>
+                                </StackPanel>
+                            </MenuItem>
+                        </MenuItem>
+                    </Menu>
+                    <DataGrid x:Name="main_grid">
+                        <DataGrid.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem Header="Удалить" Click="DeleteMenuItem_Click"/>
+                                <MenuItem Header="Обновить" Click="RefreshMenuItem_Click"/>
+                            </ContextMenu>
+                        </DataGrid.ContextMenu>
+                    </DataGrid>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Вкладка 2" Height="20" VerticalAlignment="Top">
+                <StackPanel Orientation="Vertical">
+                    <Menu IsMainMenu="True">
+                        <MenuItem Header="Archive" Click="SellMenuItem_Click"></MenuItem>
+                        
+                    </Menu>
+
+                    <Label>Avalaible</Label>
+                    <DataGrid x:Name="dataGridAvailableRecords" MinWidth="300">
+                        <DataGrid.ContextMenu>
+                            <ContextMenu>
+                                
+                                <MenuItem Header="Обновить" Click="RefreshMenuItem_Click"/>
+                            </ContextMenu>
+                        </DataGrid.ContextMenu>
+                    </DataGrid>
+                    <Label>Archived</Label>
+                    <DataGrid x:Name="dataGridArchivedRecords" MinWidth="300">
+                        <DataGrid.ContextMenu>
+                            <ContextMenu>
+                               
+                                <MenuItem Header="Обновить" Click="RefreshMenuItem_Click"/>
+                            </ContextMenu>
+                        </DataGrid.ContextMenu>
+                    </DataGrid>
+
+                    <Label>Count to Archive</Label>
+                    <TextBox x:Name="Count" Width="auto"></TextBox>
+                    
+                </StackPanel>
+                
+            </TabItem>
+        </TabControl>
+        
+    </Grid>
+</Window>
