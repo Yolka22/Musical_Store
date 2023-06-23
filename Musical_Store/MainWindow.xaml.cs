@@ -53,12 +53,26 @@ namespace Musical_Store
             LoadArchivedRecordsFromDatabase();
         }
 
+        private void Show_All_Click(object sender, RoutedEventArgs e)
+        {
+            Connection = new SqlConnection(connection_str);
+            Connection.Open();
 
+            dataTable = new DataTable();
+            sqlQuery = "SELECT * FROM VinylRecords";
+            command = new SqlCommand(sqlQuery, Connection);
+            Adapter = new SqlDataAdapter(command);
+            Adapter.Fill(dataTable);
+
+            main_grid.ItemsSource = dataTable.DefaultView;
+
+            Connection.Close();
+        }
         private void LoadAvailableRecordsFromDatabase()
         {
             try
             {
-                
+                Connection.Close();
                 Connection.Open();
 
                
@@ -88,16 +102,16 @@ namespace Musical_Store
         {
             try
             {
-                
+                Connection.Close();
                 Connection.Open();
 
                 
                 SqlCommand command = new SqlCommand("SELECT * FROM ArchivedRecords", Connection);
 
 
-                SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
-                DataTable dataTable = new DataTable();
-                dataAdapter.Fill(dataTable);
+                Adapter = new SqlDataAdapter(command);
+                dataTable = new DataTable();
+                Adapter.Fill(dataTable);
 
 
                 dataGridArchivedRecords.ItemsSource = dataTable.DefaultView;
@@ -271,6 +285,8 @@ namespace Musical_Store
             }
 
         }
+
+
     }
     }
 

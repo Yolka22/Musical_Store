@@ -5,12 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Musical_Store"
         mc:Ignorable="d"
+        Background="#4e7a31"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <TabControl>
-            <TabItem Header="Вкладка 1">
-                <StackPanel Orientation="Vertical">
+            <TabItem Header="All Vinyls">
+                <StackPanel Orientation="Vertical" Background="#4e7a31">
                     <Menu>
+                        <MenuItem Header="Show All" Click="Show_All_Click">
+                           
+                        </MenuItem>
                         <MenuItem Header="Search">
                             <MenuItem Header="Genre">
                                 <StackPanel Orientation="Horizontal">
@@ -42,14 +46,9 @@
                     </DataGrid>
                 </StackPanel>
             </TabItem>
-            <TabItem Header="Вкладка 2" Height="20" VerticalAlignment="Top">
-                <StackPanel Orientation="Vertical">
-                    <Menu IsMainMenu="True">
-                        <MenuItem Header="Archive" Click="SellMenuItem_Click"></MenuItem>
-                        
-                    </Menu>
-
-                    <Label>Avalaible</Label>
+            <TabItem Header="Archived" >
+                <StackPanel Orientation="Vertical" Background="#4e7a31">
+                    <Label Margin="50,0">Avalaible</Label>
                     <DataGrid x:Name="dataGridAvailableRecords" MinWidth="300">
                         <DataGrid.ContextMenu>
                             <ContextMenu>
@@ -58,7 +57,7 @@
                             </ContextMenu>
                         </DataGrid.ContextMenu>
                     </DataGrid>
-                    <Label>Archived</Label>
+                    <Label Margin="50,0">Archived</Label>
                     <DataGrid x:Name="dataGridArchivedRecords" MinWidth="300">
                         <DataGrid.ContextMenu>
                             <ContextMenu>
@@ -68,8 +67,14 @@
                         </DataGrid.ContextMenu>
                     </DataGrid>
 
-                    <Label>Count to Archive</Label>
-                    <TextBox x:Name="Count" Width="auto"></TextBox>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Margin="50,0">COUNT TO ARCHIVE</Label>
+                        <TextBox x:Name="Count" Width="100" Height="20"></TextBox>
+                    </StackPanel>
+
+
+                    <Button Height="30" Background="Aquamarine" Click="SellMenuItem_Click" FontSize="20" Foreground="#b24d0c">ARCHIVE</Button>
+
                     
                 </StackPanel>
                 

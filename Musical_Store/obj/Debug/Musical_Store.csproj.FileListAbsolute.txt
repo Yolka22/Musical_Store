@@ -14,3 +14,4 @@ C:\Users\egork\source\repos\Musical_Store\Musical_Store\obj\Debug\Musical_Store.
 C:\Users\egork\source\repos\Musical_Store\Musical_Store\obj\Debug\Musical_Store.csproj.CoreCompileInputs.cache
 C:\Users\egork\source\repos\Musical_Store\Musical_Store\obj\Debug\Musical_Store.exe
 C:\Users\egork\source\repos\Musical_Store\Musical_Store\obj\Debug\Musical_Store.pdb
+C:\Users\egork\source\repos\Musical_Store\Musical_Store\obj\Debug\App.baml
